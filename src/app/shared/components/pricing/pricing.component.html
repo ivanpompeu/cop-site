@@ -1,0 +1,67 @@
+<section class="cop-pricing" id="planos">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="cop-section-tag">Planos & Preços</span>
+      <h2 class="cop-section-title mt-2">Escolha o plano ideal<br>para o seu negócio</h2>
+      <p class="cop-pricing-sub mx-auto mt-3">
+        Sem taxas ocultas. Cancele quando quiser. Suporte incluso em todos os planos.
+      </p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+      @for (plano of planos; track plano.id) {
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="cop-plan-card h-100" [class.cop-plan-destaque]="plano.destaque">
+
+            @if (plano.destaque) {
+              <div class="cop-plan-badge">Mais Popular</div>
+            }
+
+            <div class="cop-plan-header">
+              <h3 class="cop-plan-name">{{ plano.nome }}</h3>
+              <p class="cop-plan-desc">{{ plano.descricao }}</p>
+              <div class="cop-plan-preco">
+                <span class="cop-plan-currency">R$</span>
+                <span class="cop-plan-valor">{{ plano.preco }}</span>
+                <span class="cop-plan-periodo">/mês</span>
+              </div>
+            </div>
+
+            <ul class="cop-plan-recursos">
+              @for (recurso of plano.recursos; track recurso) {
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  {{ recurso }}
+                </li>
+              }
+            </ul>
+
+            <div class="mt-auto pt-4">
+              <button
+                class="btn w-100 btn-lg"
+                [class.btn-cop-primary]="plano.destaque"
+                [class.btn-cop-outline]="!plano.destaque"
+                [disabled]="loading()"
+                (click)="assinar(plano)">
+                @if (loading()) {
+                  <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                  Aguarde...
+                } @else {
+                  Assinar {{ plano.nome }}
+                }
+              </button>
+            </div>
+
+          </div>
+        </div>
+      }
+    </div>
+
+    <p class="text-center cop-pricing-note mt-4">
+      <i class="bi bi-lock-fill me-1"></i>
+      Pagamento seguro processado pelo Stripe. Seus dados estão protegidos.
+    </p>
+
+  </div>
+</section>

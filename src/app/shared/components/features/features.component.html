@@ -1,0 +1,24 @@
+<section class="cop-features" id="funcionalidades">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="cop-section-tag">Funcionalidades</span>
+      <h2 class="cop-section-title mt-2">Tudo que você precisa para<br>gerir sua obra com precisão</h2>
+    </div>
+
+    <div class="row g-4">
+      @for (f of features; track f.title) {
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="cop-feature-card h-100">
+            <div class="cop-feature-icon mb-3">
+              <i class="bi {{ f.icon }}"></i>
+            </div>
+            <h3 class="cop-feature-title">{{ f.title }}</h3>
+            <p class="cop-feature-desc">{{ f.desc }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

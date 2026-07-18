@@ -1,0 +1,46 @@
+.cop-features {
+  background-color: var(--cop-light);
+  padding: 80px 0;
+}
+
+.cop-feature-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s, transform 0.25s;
+
+  &:hover {
+    box-shadow: 0 8px 32px rgba(13, 173, 228, 0.12);
+    transform: translateY(-3px);
+  }
+}
+
+.cop-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(13, 173, 228, 0.12);
+  border-radius: 10px;
+
+  i {
+    font-size: 22px;
+    color: var(--cop-blue);
+  }
+}
+
+.cop-feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--cop-navy);
+  margin-bottom: 8px;
+}
+
+.cop-feature-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 0;
+}

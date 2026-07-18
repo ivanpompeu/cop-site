@@ -1,0 +1,98 @@
+// ─── Brand Variables ──────────────────────────────────────────────────────────
+:root {
+  --cop-navy: #2D2D3D;
+  --cop-blue: #0DADE4;
+  --cop-blue-mid: #0CA0D3;
+  --cop-blue-dark: #1B506B;
+  --cop-gray: #666666;
+  --cop-light: #F5F7FA;
+}
+
+// ─── Reset / Base ─────────────────────────────────────────────────────────────
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ─── Typography utilities ─────────────────────────────────────────────────────
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+// ─── Color utilities ──────────────────────────────────────────────────────────
+.text-cop-blue  { color: var(--cop-blue) !important; }
+.text-cop-navy  { color: var(--cop-navy) !important; }
+.bg-cop-navy    { background-color: var(--cop-navy) !important; }
+.bg-cop-blue    { background-color: var(--cop-blue) !important; }
+.bg-cop-light   { background-color: var(--cop-light) !important; }
+
+// ─── Section helpers ──────────────────────────────────────────────────────────
+.cop-section-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cop-blue);
+  margin-bottom: 10px;
+}
+
+.cop-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px;
+  color: var(--cop-navy);
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.cop-section-sub {
+  color: var(--cop-gray);
+  font-size: 15px;
+  max-width: 520px;
+  line-height: 1.65;
+  margin-bottom: 44px;
+}
+
+// ─── Buttons ──────────────────────────────────────────────────────────────────
+.btn-cop-primary {
+  background-color: var(--cop-blue);
+  border-color: var(--cop-blue);
+  color: #fff;
+  font-weight: 600;
+
+  &:hover, &:focus {
+    background-color: var(--cop-blue-mid);
+    border-color: var(--cop-blue-mid);
+    color: #fff;
+  }
+}
+
+.btn-cop-outline {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+  }
+}
+
+.btn-cop-outline-dark {
+  background-color: var(--cop-light);
+  border-color: #D0D8E0;
+  color: var(--cop-navy);
+  font-weight: 600;
+
+  &:hover, &:focus {
+    background-color: #E8ECF0;
+    border-color: #C0CDD8;
+    color: var(--cop-navy);
+  }
+}

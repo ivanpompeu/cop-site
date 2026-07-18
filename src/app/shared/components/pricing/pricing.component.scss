@@ -1,0 +1,146 @@
+.cop-pricing {
+  background-color: #fff;
+  padding: 80px 0 72px;
+}
+
+.cop-pricing-sub {
+  color: #666;
+  font-size: 15px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.cop-plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 36px 32px 32px;
+  transition: box-shadow 0.25s, transform 0.25s;
+
+  &:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+
+  &.cop-plan-destaque {
+    border-color: var(--cop-blue);
+    box-shadow: 0 8px 40px rgba(13, 173, 228, 0.18);
+  }
+}
+
+.cop-plan-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cop-blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.cop-plan-header {
+  margin-bottom: 24px;
+}
+
+.cop-plan-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  color: var(--cop-navy);
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.cop-plan-desc {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.cop-plan-preco {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  line-height: 1;
+}
+
+.cop-plan-currency {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--cop-navy);
+  margin-bottom: 6px;
+}
+
+.cop-plan-valor {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: var(--cop-navy);
+  letter-spacing: -1px;
+}
+
+.cop-plan-periodo {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+  margin-left: 2px;
+}
+
+.cop-plan-recursos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  padding-top: 20px;
+  flex: 1;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    padding: 6px 0;
+
+    i {
+      font-size: 16px;
+      color: var(--cop-blue);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  }
+}
+
+.cop-pricing-note {
+  font-size: 12px;
+  color: #aaa;
+
+  i { color: #aaa; }
+}
+
+.btn-cop-outline {
+  background: transparent;
+  border: 2px solid var(--cop-navy);
+  color: var(--cop-navy);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover:not(:disabled) {
+    background: var(--cop-navy);
+    color: #fff;
+  }
+
+  &:disabled { opacity: 0.6; cursor: not-allowed; }
+}
+
+.btn-cop-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

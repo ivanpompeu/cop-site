@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg cop-navbar">
+  <div class="container">
+    <a class="navbar-brand cop-brand" routerLink="/">
+      <div class="cop-brand-icon">COP</div>
+      <span class="cop-brand-text">CUSTO OBRA <em>PRO</em></span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarMain"
+      aria-controls="navbarMain" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto ms-4">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']" fragment="funcionalidades">Funcionalidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']" fragment="planos">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']" fragment="faq">FAQ</a>
+        </li>
+      </ul>
+      <a [href]="copAppUrl" class="btn btn-cop-primary btn-sm px-4">
+        Entrar no sistema
+      </a>
+    </div>
+  </div>
+</nav>

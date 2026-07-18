@@ -1,0 +1,42 @@
+<section class="cop-faq" id="faq">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="cop-section-tag">Perguntas Frequentes</span>
+      <h2 class="cop-section-title mt-2">Tire suas dúvidas</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="accordion cop-accordion" id="faqAccordion">
+          @for (item of perguntas; track item.pergunta; let i = $index) {
+            <div class="accordion-item cop-accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button cop-accordion-btn"
+                  [class.collapsed]="i !== 0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  [attr.data-bs-target]="'#faq-' + i"
+                  [attr.aria-expanded]="i === 0"
+                  [attr.aria-controls]="'faq-' + i">
+                  {{ item.pergunta }}
+                </button>
+              </h2>
+              <div
+                [id]="'faq-' + i"
+                class="accordion-collapse collapse"
+                [class.show]="i === 0"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body cop-accordion-body">
+                  {{ item.resposta }}
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

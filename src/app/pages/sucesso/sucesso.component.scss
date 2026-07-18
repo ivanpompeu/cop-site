@@ -1,0 +1,45 @@
+.cop-result-page {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  background-color: var(--cop-light);
+}
+
+.cop-result-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+
+  i { font-size: 42px; }
+
+  &--success {
+    background: rgba(25, 185, 84, 0.12);
+    i { color: #19b954; }
+  }
+}
+
+.cop-result-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 46px;
+  color: var(--cop-navy);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.cop-result-msg {
+  font-size: 16px;
+  color: #555;
+  max-width: 480px;
+  line-height: 1.65;
+  margin-bottom: 32px;
+}
+
+.cop-result-note {
+  font-size: 13px;
+  color: #aaa;
+}

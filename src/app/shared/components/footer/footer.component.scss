@@ -1,0 +1,18 @@
+.cop-footer {
+  background-color: #1E1E2C;
+  padding: 28px 0;
+}
+
+.cop-footer-copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cop-footer-link {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover { color: rgba(255, 255, 255, 0.8); }
+}

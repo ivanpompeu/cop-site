@@ -1,0 +1,55 @@
+.cop-hero {
+  background-color: var(--cop-navy);
+  padding: 80px 0 88px;
+}
+
+.cop-hero-badge {
+  display: inline-block;
+  background: rgba(13, 173, 228, 0.15);
+  border: 1px solid rgba(13, 173, 228, 0.35);
+  color: var(--cop-blue);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 20px;
+}
+
+.cop-hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 58px;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  max-width: 660px;
+  margin: 0 auto 16px;
+
+  @media (max-width: 576px) { font-size: 40px; }
+}
+
+.cop-hero-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 17px;
+  max-width: 500px;
+  margin-bottom: 36px;
+  line-height: 1.65;
+}
+
+.cop-hero-stats {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cop-stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 34px;
+  color: var(--cop-blue);
+  line-height: 1.1;
+}
+
+.cop-stat-lbl {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
