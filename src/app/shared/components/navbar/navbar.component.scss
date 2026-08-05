@@ -44,11 +44,18 @@
   height: 64px;
 }
 
-/* No celular a barra continua horizontal: com a assinatura vertical ela
-   cresceria para 98px de altura e a marca sairia com 49px de largura, com a
-   linha de apoio ilegível. O vertical fica guardado para onde há altura. */
+.cop-brand-vertical {
+  display: none;
+}
+
+/* No celular entra a assinatura vertical, com o nome abaixo do símbolo. */
 @media (max-width: 575.98px) {
   .cop-brand-horizontal {
-    height: 48px;
+    display: none;
+  }
+
+  .cop-brand-vertical {
+    display: block;
+    height: 72px;
   }
 }
