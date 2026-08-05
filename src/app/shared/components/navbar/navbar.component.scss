@@ -28,28 +28,34 @@
   text-decoration: none;
 }
 
-.cop-brand-icon {
-  width: 32px;
-  height: 32px;
-  background-color: var(--cop-blue);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 14px;
-  flex-shrink: 0;
+/* O navbar tem fundo --cop-navy, a mesma cor do quadrado da marca.
+   Por isso aqui entra a versão com o nome em branco: na colorida o
+   "CUSTO OBRA" some no fundo. Regra do manual de identidade. */
+/* 56px foi o menor tamanho em que a linha "software de gestão de obras"
+   ainda se lê. Abaixo disso ela vira borrão. */
+.cop-brand-logo {
+  width: auto;
 }
 
-.cop-brand-text {
-  color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
+/* Horizontal no desktop, vertical no celular.
+   Os arquivos já trazem embutida a área de não interferência do manual. */
+.cop-brand-horizontal {
+  display: block;
+  height: 64px;
+}
 
-  em {
-    color: var(--cop-blue);
-    font-style: normal;
+.cop-brand-vertical {
+  display: none;
+}
+
+/* No celular entra a assinatura vertical, com o nome abaixo do símbolo. */
+@media (max-width: 575.98px) {
+  .cop-brand-horizontal {
+    display: none;
+  }
+
+  .cop-brand-vertical {
+    display: block;
+    height: 72px;
   }
 }
