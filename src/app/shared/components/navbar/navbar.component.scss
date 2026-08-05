@@ -34,13 +34,21 @@
 /* 56px foi o menor tamanho em que a linha "software de gestão de obras"
    ainda se lê. Abaixo disso ela vira borrão. */
 .cop-brand-logo {
-  height: 56px;
   width: auto;
-  display: block;
 }
 
+/* Horizontal no desktop, vertical no celular.
+   Os arquivos já trazem embutida a área de não interferência do manual. */
+.cop-brand-horizontal {
+  display: block;
+  height: 64px;
+}
+
+/* No celular a barra continua horizontal: com a assinatura vertical ela
+   cresceria para 98px de altura e a marca sairia com 49px de largura, com a
+   linha de apoio ilegível. O vertical fica guardado para onde há altura. */
 @media (max-width: 575.98px) {
-  .cop-brand-logo {
-    height: 42px;
+  .cop-brand-horizontal {
+    height: 48px;
   }
 }
