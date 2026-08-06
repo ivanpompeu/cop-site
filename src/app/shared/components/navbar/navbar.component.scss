@@ -37,25 +37,26 @@
   width: auto;
 }
 
-/* Horizontal no desktop, vertical no celular.
+/* A marca do Custo Obra Pro segue a mesma regra do sistema: só no celular
+   entra o símbolo isolado, e em todo o resto a assinatura horizontal em
+   tamanho único, que não encolhe conforme a tela.
    Os arquivos já trazem embutida a área de não interferência do manual. */
 .cop-brand-horizontal {
   display: block;
   height: 64px;
 }
 
-.cop-brand-vertical {
+.cop-brand-simbolo {
   display: none;
 }
 
-/* No celular entra a assinatura vertical, com o nome abaixo do símbolo. */
 @media (max-width: 575.98px) {
   .cop-brand-horizontal {
     display: none;
   }
 
-  .cop-brand-vertical {
+  .cop-brand-simbolo {
     display: block;
-    height: 72px;
+    height: 56px;
   }
 }
