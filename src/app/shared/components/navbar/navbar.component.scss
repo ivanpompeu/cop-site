@@ -40,7 +40,11 @@
 /* A marca do Custo Obra Pro segue a mesma regra do sistema: só no celular
    entra o símbolo isolado, e em todo o resto a assinatura horizontal em
    tamanho único, que não encolhe conforme a tela.
-   Os arquivos já trazem embutida a área de não interferência do manual. */
+   Os arquivos já trazem embutida a área de não interferência do manual.
+
+   Aqui entra a versão de fundo escuro. O cabeçalho do site é escuro, e a
+   versão colorida ficava com 1,2 de contraste contra ele: o nome sumia e só
+   a palavra PRO aparecia. Na versão branca o contraste vai a 13,5. */
 .cop-brand-horizontal {
   display: block;
   height: 64px;
